@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Whack-A-Mole </title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="mainPage.css"/>
+</head>
+<body class="bg-dark">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12" id="Title">
+				<h1> Whack - <span class="text-danger">A</span> - Mole </h1>
+			</div>
+		</div>
+		<div class="row d-block d-lg-none" id="smlMenu">
+			<i class="fas fa-bars" type="button" id="dropdownMenuButton"></i>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-12 d-none d-lg-block" id="timerAndScoreContainer">
+					<h3> Timer : <span class="timer">0</span></h3>
+					<h3> Score : <span class="score">0</span></h3>
+					<div class="flex-box">
+						<button class="btn btn-outline-light" id="timerStarts"> Play </button><br>
+						<button class="btn btn-outline-light" id="restart"> Restart </button>
+					</div>
+			</div>
+			<div class="col-lg-6 col-12" id="gameBoard">
+				<div id="theTable">
+					<div class="mole"></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="d-block d-lg-none" class="smlFlexBox">
+					<h3> Timer : <span class="smlTimer">0</span> <span class="forMargin"> Score : </span><span class="smlScore">0</span></h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-12 d-none d-lg-block" id="modeButtonContainer">
+				<button class="btn btn-outline-light" id="modeChange"> Light Mode </button>
+				<div class="messageBox">
+					<p> The mole has taken over to destroy your farm and now you have 1 minutes to whack it !!</p>
+				</div>
+				<div class="image">
+					<img src="Images/normalFace1.jpg" class="img-fluid"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="d-block d-lg-none nonVisible">
+					<ul>
+						<li>
+							<a href="#" id="smlPlay"> Play </a>
+						</li>
+						<li>
+							<a href="#" id="smlModeToggle"> Mode Toggle </a>
+						</li>
+						<li>
+							<a href="#" id="smlRestart"> Restart </a>
+						</li>
+					</ul>
+	</div>
+</body>
+<script type="text/javascript" src="mainPage.js"></script>
+<script src="https://kit.fontawesome.com/e33d5b9810.js" crossorigin="anonymous"></script>
+</html>
